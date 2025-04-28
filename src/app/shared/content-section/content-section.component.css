@@ -1,0 +1,15 @@
+.content-section-wrapper {
+    background-color: var(--light-gray);
+    border-radius: 0.9rem;
+}
+
+.section-header {
+    display: flex;
+    gap: 1rem;
+}
+
+h2 {
+    font-family: 'Outfit';
+    font-weight: bold;
+    font-size: 3.6rem;
+}

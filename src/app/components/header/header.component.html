@@ -1,0 +1,20 @@
+<header>
+  <nav>
+    <img src="/assets/header/logo.svg" alt="" class="logo" />
+    <p class="site-title">{{headerTitleService.headerTitle()}}</p>
+    <div class="right-side">
+      <button class="btn-notification">
+        <img src="/assets/header/notification-icon.svg" class="notification-icon" />
+      </button>
+      <button class="user">
+        <img src="{{userImg()}}" class="user-img" />
+        <div class="container-username-function">
+          <p class="username">{{username()}}</p>
+          <hr class="line-username-function" />
+          <p class="function">{{userFunction()}}</p>
+        </div>
+        <img src="/assets/header/arrow-user.svg" class="arrow-icon" />
+      </button>
+    </div>
+  </nav>
+</header>
