@@ -9,7 +9,7 @@ export class CardEventService {
     return [{
       id: 0,
       name: "titulo",
-      descricao: "opa",
+      descricao: "opaaaaaaaaaaa",
       cor: "#AAA",
       dataInicio: "01/01/0001",
       dataTermino: "02/01/0001",

@@ -1,5 +1,16 @@
-<div class="card-event-wrapper">
-    @for (event of filterList(); track $index) {
-        
+<div class="card-filter-wrapper">
+    @for (filter of filterList(); track $index) {
+        <div class="card-filter">
+            <img src="/assets/card-filter/icon-filter.svg" class="filter-icon">
+            <h2 class="filter-name">{{filter.nome}}</h2>
+            <ul class="filter-text">
+                <li>{{filter.pais}}</li>
+                <li>{{filter.ano}}</li>
+                <li>{{filter.continente}}</li>
+                <li>{{filter.viaChegada}}</li>
+                <li>{{filter.desembarque}}</li>
+                </ul>
+            <img src="/assets/card-filter/icon-anchor.svg" class="filter-achor-icon">
+        </div>
     }
 </div>

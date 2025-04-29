@@ -6,7 +6,7 @@ import { userFilter } from '../../models/user-filter.type';
 })
 export class CardFilterService {
 
-  getUserFilter(){
+  getUserFilters(){
     return [{
       id: 1, nome: "teste", pais: "Brasil", ano: 2077, continente: "America", viaChegada: "Avião", desembarque: "GRU"
     }] as userFilter[]

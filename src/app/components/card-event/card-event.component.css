@@ -21,7 +21,7 @@
 }
 
 .text {
-    min-width: 24.8rem;
+    max-width: 24.8rem;
     margin-right: 3.3rem;
     margin-left: 1.7rem;
     display: flex;

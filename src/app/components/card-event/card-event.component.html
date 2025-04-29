@@ -1,7 +1,7 @@
 <div class="card-event-wrapper">
     @for (event of eventList(); track $index) {
         <div class="card-event" id="{{event.id+'_id_card_event'}}">
-            <div class="color-bar" [style.backgroundColor]="event.cor"></div>
+            <span class="color-bar" [style.backgroundColor]="event.cor"></span>
             <div class="internal">
                 <div class="text">
                     <h2 class="card-name">{{event.name}}</h2>
