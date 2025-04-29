@@ -1,5 +1,5 @@
 import { Component, input, signal } from '@angular/core';
-import { HeaderTitleService } from '../../services/header-title.service';
+import { HeaderTitleService } from '../../services/header-title/header-title.service';
 
 @Component({
   selector: 'app-header',

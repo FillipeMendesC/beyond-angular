@@ -1,0 +1,45 @@
+.card-event-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+
+.card-filter {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 0.8rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 1.2rem 1.6rem;
+}
+
+.filter-icon {
+    width: 2.9rem;
+    margin-right: 0.8rem;
+    height: min-content;
+}
+
+.filter-name {
+    font-size: 2.4rem;
+    font-weight: 500;
+    height: min-content;
+    margin-right: 2.8rem;
+}
+
+.filter-text{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: initial;
+    list-style-type: circle;
+    gap: 2rem;
+    max-width: 22.9rem;
+    margin-right: 3.5rem;
+}
+
+.filter-text li {
+    list-style: initial;
+    font-size: 1.2rem;
+    color: #737373;
+}
+
+
