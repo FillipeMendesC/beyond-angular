@@ -3,12 +3,41 @@
 }
 
 .kpis{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
     background-color: #EDF2F1;
-    font-family: O;
+    font-family: sans-serif;
+    padding: 1rem;
+    
 }
 
 .kpis-cards {
     display: flex;
-    color: #FFFFFF;
+    gap: 1.5rem;
+   
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    
     background-color: #3E5744;
+    border-radius: 1rem 1rem 0 0;
+    height: 2rem;
+    
+}
+
+.kpis-cards h3 {    
+    font-size: 1.5rem;
+    color: #FFFFFF;
+
+}
+
+.card-kpi {
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    width: 23rem;
+    height: 15rem;
+    
 }
