@@ -1,0 +1,14 @@
+.Painel-de-controle-historico {
+
+}
+
+.kpis{
+    background-color: #EDF2F1;
+    font-family: O;
+}
+
+.kpis-cards {
+    display: flex;
+    color: #FFFFFF;
+    background-color: #3E5744;
+}
