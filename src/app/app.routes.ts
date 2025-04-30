@@ -9,5 +9,16 @@ export const routes: Routes = [
                 m => m.HomeComponent
             )
         },
+        
+    },
+    {
+        path: 'tendencias',
+        pathMatch: 'full',
+        loadComponent() {
+            return import("./tendencias/tendencias.component").then(
+                m => m.TendenciasComponent
+            )
+        },
+        
     }
 ];
