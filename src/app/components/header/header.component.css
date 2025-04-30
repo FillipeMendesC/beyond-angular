@@ -1,8 +1,7 @@
 header {
     background-color: var(--light-gray);
-    height: 10.4rem;
+    height: 8rem;
 }
-
 
 p, .site-title {
     color: var(--navy-blue);
@@ -14,6 +13,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.1rem 2.6rem;
+}
+
+.logo {
+    height: 6rem;
 }
 
 .site-title {
@@ -46,8 +49,8 @@ nav {
 }
 
 .user-img {
-    width: 6.8rem;
-    height: 6.8rem;
+    width: 4.8rem;
+    height: 4.8rem;
     border-radius: 100%;
     background-color: white;
     margin-right: 2.4rem;
