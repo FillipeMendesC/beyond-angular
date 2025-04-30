@@ -2,50 +2,39 @@
 
     <div class="kpis">
         <div class="kpis-cards">
-            <div class="card-kpi">
-                <div class="title">
-                    <h3>Total de chegadas</h3>
-                </div>
-                <p class="kpi-value"></p>
-              </div>
-              <div class="card-kpi">
-                <div class="title">
-                    <h3>Kpi1</h3>
-                </div>
-                <p class="kpi-value"></p>
-              </div>
-              <div class="card-kpi">
-                <div class="title">
-                    <h3>Kpi2</h3>      
-                </div>
-              
-                <p class="kpi-value"></p>
-              </div>
+            
+            <app-card-kpi titulo="Total de chegadas" conteudoKpi="%333.00"></app-card-kpi>
+            <app-card-kpi titulo="kpi2" conteudoKpi="%333.00"></app-card-kpi>
+            <app-card-kpi titulo="kpi3" conteudoKpi="%333.00"></app-card-kpi>
         </div>
       <div class="filtros">
-        <div class="filter-group">
-          <label for="anoMes">Ano | Mês</label>
-          <select id="anoMes">
-            <option>Selecionar</option>
-          </select>
+        <div class="group-A">
+            <div class="filter-group">
+                <label for="anoMes">Ano | Mês</label>
+                <select id="select-option">
+                  <option></option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="continentePais">Continente | País</label>
+                <select id="select-option">
+                  <option></option>
+                </select>
+              </div>
         </div>
-        <div class="filter-group">
-          <label for="continentePais">Continente | País</label>
-          <select id="continentePais">
-            <option>Selecionar</option>
-          </select>
-        </div>
-        <div class="filter-group">
-          <label for="viaAcesso">Via de acesso</label>
-          <select id="viaAcesso">
-            <option>Selecionar</option>
-          </select>
-        </div>
-        <div class="filter-group">
-          <label for="portaoEntrada">Portão de entrada</label>
-          <select id="portaoEntrada">
-            <option>Selecionar</option>
-          </select>
+        <div class="group-B">
+            <div class="filter-group">
+                <label for="viaAcesso">Via de acesso</label>
+                <select id="select-option">
+                  <option></option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="portaoEntrada">Portão de entrada</label>
+                <select id="select-option">
+                  <option></option>
+                </select>
+              </div>
         </div>
       </div>
     </div>
@@ -57,10 +46,10 @@
       <div class="chart-placeholder">
         <!-- espaço para colocar o gráfico -->
       </div>
-      <div class="chart-legend">
+    </div>
+    <div class="chart-legend">
         <p>Anos: 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025</p>
       </div>
-    </div>
   
   </div>
   
