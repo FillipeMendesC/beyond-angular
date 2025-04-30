@@ -15,4 +15,5 @@ export class CardEventComponent implements OnInit {
   ngOnInit():void {
     this.eventList.set(this.cardEventService.getUserEvents())
   }
+
 }
