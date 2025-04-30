@@ -1,5 +1,5 @@
 .Painel-de-controle-historico {
-
+    padding-bottom: 1rem;
 }
 
 .kpis{
@@ -9,7 +9,6 @@
     background-color: #EDF2F1;
     font-family: sans-serif;
     padding: 3rem;
-    
 }
 
 .kpis-cards {
@@ -63,7 +62,6 @@
     border: solid 0.5px;
     border-radius: 1rem;
     box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
-   
 }
 
 .grafico-card h2 {
@@ -74,4 +72,10 @@
     border-radius: 1rem 1rem 0 0;
     height: 3.4rem;
     color: #FFFFFF;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
 }
