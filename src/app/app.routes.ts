@@ -20,5 +20,14 @@ export const routes: Routes = [
             )
         },
         
+    },
+    {
+        path: 'organizacao',
+        pathMatch: 'full',
+        loadComponent() {
+            return import("./organizacao/organizacao.component").then(
+                m => m.OrganizacaoComponent
+            )
+        },
     }
 ];
