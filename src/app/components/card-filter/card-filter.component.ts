@@ -1,10 +1,11 @@
 import { Component, inject, signal } from '@angular/core';
 import { CardFilterService } from '../../services/card-filter/card-filter.service';
 import { userFilter } from '../../models/user-filter.type';
+import { CdkDragDrop, DragDropModule, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-card-filter',
-  imports: [],
+  imports: [DragDropModule],
   templateUrl: './card-filter.component.html',
   styleUrl: './card-filter.component.css'
 })
@@ -29,5 +30,12 @@ export class CardFilterComponent {
 
   ngOnInit():void {
     this.filterList.set(this.cardFilterService.getUserFilters())
+  }
+
+  drop(event: CdkDragDrop<userFilter[]>) {
+    this.filterList.update(list => {
+      moveItemInArray(list, event.previousIndex, event.currentIndex);
+      return list;
+    })
   }
 }

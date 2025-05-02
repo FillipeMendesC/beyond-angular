@@ -26,24 +26,32 @@ ul {
 }
 
 li {
-    padding: 0.8rem 0;
     cursor: pointer;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     transition: background-color 0.3s ease-in-out;
 }
 
+li svg {
+    margin: 0.8rem 0;
+}
 
+.active-route,
 li:hover {
     background-color: white;
 }
 
-li:hover #icon-color.fill {
-    fill: var(--navy-blue);
+.active-route #icon-color.stroke,
+li:hover #icon-color.stroke
+{
+    stroke: var(--navy-blue)
 }
 
-li:hover #icon-color.stroke {
-    stroke: var(--navy-blue)
+.active-route #icon-color.fill,
+li:hover #icon-color.fill
+{
+    fill: var(--navy-blue);
 }
 
 .icon {
@@ -59,4 +67,25 @@ li:hover #icon-color.stroke {
 #icon-color.stroke {
     stroke: white;
     transition: stroke 0.3s ease-in-out;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.options p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1C274C;
+    width: 100%;
+    text-align: center;
+}
+
+.options p:hover {
+    background-color: var(--light-green);
 }
