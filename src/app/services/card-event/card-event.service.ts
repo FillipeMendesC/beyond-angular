@@ -12,7 +12,7 @@ export class CardEventService {
       descricao: "opa",
       cor: "#AAA",
       dataInicio: "01/01/0001",
-      dataTermino: "02/01/0001",
+      dataTermino: "22/02/2026",
     },
     {
       id: 1,
