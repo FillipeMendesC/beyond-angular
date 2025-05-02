@@ -1,7 +1,6 @@
 .content-section-wrapper {
     background-color: var(--light-gray);
     border-radius: 0.9rem;
-    
 }
 
 .section-header {
@@ -13,12 +12,14 @@
 }
 
 h2 {
+    color: #002332;
     font-weight: bold;
     font-size: 3.6rem;
 }
 
 .cards-wrapper {
     padding: 1.7rem 3.5rem;
-    height: 64rem;
+    max-height: 64rem;
+    overflow-y: hidden;
     overflow-x: scroll;
 }

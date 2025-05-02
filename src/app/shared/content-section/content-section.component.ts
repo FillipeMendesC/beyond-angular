@@ -9,4 +9,12 @@ import { CommonModule } from '@angular/common';
 export class ContentSectionComponent {
   @Input() iconUrl: string = '';
   @Input() title: string = '';
+  @Input() padding : string = '';
+
+  get cardPaddingStyle(){
+    if(this.padding){
+      return `padding: ${this.padding}`;
+    }
+    return null;
+  }
 }
