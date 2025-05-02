@@ -18,6 +18,15 @@ export const routes: Routes = [
                 m => m.PainelDeControleHistoricoComponent
             );
         },
+    },
+    {
+        path: 'configuracoes',
+        pathMatch: 'full',
+        loadComponent() {
+            return import('./configuracoes-perfil/configuracoes-perfil.component').then(
+                m => m.ConfiguracoesPerfilComponent
+            );
+        },
     }
    
 ];

@@ -1,7 +1,7 @@
 import { Component, input, signal } from '@angular/core';
 import { HeaderTitleService } from '../../services/header-title/header-title.service';
 import { RouterLink } from '@angular/router';
-import { PupUpComponent } from '../../pup-up/pup-up.component'; 
+import { PupUpComponent } from '../pup-up/pup-up.component'; 
 
 @Component({
   selector: 'app-header',

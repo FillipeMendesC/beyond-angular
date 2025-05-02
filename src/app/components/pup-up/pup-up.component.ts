@@ -1,20 +1,14 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-pup-up',
   standalone: true,
+  imports: [RouterLink],
   templateUrl: './pup-up.component.html',
   styleUrls: ['./pup-up.component.css']
 })
 export class PupUpComponent {
-  @Output() configuracoesClicado = new EventEmitter<void>();
-  @Output() sairClicado = new EventEmitter<void>();
-
-  aoClicarConfiguracoes() {
-    this.configuracoesClicado.emit();
-  }
-
-  aoClicarSair() {
-    this.sairClicado.emit();
-  }
+  
 }

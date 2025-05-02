@@ -6,7 +6,7 @@
       <button class="btn-notification">
         <img src="/assets/header/notification-icon.svg" class="notification-icon" />
       </button>
-      <button class="user" routerLink="/app/configuracoes-perfil">
+      <button class="user" (click)="togglePopup()" (mouseleave)="togglePopup()" >
         <img src="{{userImg()}}" class="user-img" />
         <div class="container-username-function">
           <p class="username">{{username()}}</p>
@@ -14,11 +14,10 @@
           <p class="function">{{userFunction()}}</p>
         </div>
         <img src="/assets/header/arrow-user.svg" class="arrow-icon" />
+        @if (isPopupVisible()) {
+          <app-pup-up (configuracoesClicado)="navegarParaConfiguracoes()" (sairClicado)="sair()"></app-pup-up>
+        }
       </button>
     </div>
   </nav>
-
-  <app-pup-up *ngIf="isPopupVisible" (configuracoesClicado)="navegarParaConfiguracoes()" (sairClicado)="sair()"></app-pup-up>
-
-
 </header>
