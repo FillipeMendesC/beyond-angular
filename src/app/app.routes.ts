@@ -11,6 +11,25 @@ export const routes: Routes = [
         },
     },
     {
+        path: 'tendencias',
+        pathMatch: 'full',
+        loadComponent() {
+            return import("./tendencias/tendencias.component").then(
+                m => m.TendenciasComponent
+            )
+        },
+        
+    },
+    {
+        path: 'organizacao',
+        pathMatch: 'full',
+        loadComponent() {
+            return import("./organizacao/organizacao.component").then(
+                m => m.OrganizacaoComponent
+            )
+        },
+    },
+    {
         path: 'historico',
         pathMatch: 'full',
         loadComponent() {
@@ -28,7 +47,6 @@ export const routes: Routes = [
             );
         },
     }
-   
 ];
 
 
