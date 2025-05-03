@@ -1,16 +1,20 @@
 import { Component } from '@angular/core';
 import { HeaderTitleService } from '../services/header-title/header-title.service';
+import { ComboChartAllComponent } from "../components/charts/combo-chart-all/combo-chart-all.component";
+
+
 
 @Component({
   selector: 'app-tendencias',
-  imports: [],
+  imports: [ComboChartAllComponent],
   templateUrl: './tendencias.component.html',
   styleUrl: './tendencias.component.css'
 })
 export class TendenciasComponent {
   constructor(public headerTitleService: HeaderTitleService) { }
-  
-    ngOnInit(): void {
-      this.headerTitleService.setTitle('Painel de controle');
-    }
+
+  ngOnInit(): void {
+    this.headerTitleService.setTitle('Painel de controle');
+
+  }
 }
