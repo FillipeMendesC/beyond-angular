@@ -2,19 +2,19 @@
     padding-bottom: 1rem;
 }
 
-.kpis{
+.kpis {
     display: flex;
     justify-content: center;
     justify-content: space-between;
     background-color: #EDF2F1;
     padding: 2rem;
-    
+
 }
 
 .kpis-cards {
     display: flex;
     gap: 2.5rem;
-   
+
 }
 
 .filtros {
@@ -57,7 +57,7 @@
 
 .grafico-card {
     margin: 4rem;
-    height: 40rem;
+    height: 55rem;
     border-color: black;
     border: solid 0.5px;
     border-radius: 1rem;

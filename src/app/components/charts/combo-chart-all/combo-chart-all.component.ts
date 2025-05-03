@@ -19,12 +19,12 @@ export class ComboChartAllComponent {
 
   drawChart() {
     var data = google.visualization.arrayToDataTable([
-      ['Month', 'Argentina', 'Chile', 'Estados Unidos', 'Paraguai', 'Uruguai', 'Total'],
-      ['Janeiro', 452136, 77221, 51919, 104338, 62848, 748462],
-      ['Fevereiro', 306756, 92803, 68655, 51802, 47460, 567476],
-      ['Março', 223602, 50877, 83609, 39007, 70866, 467961],
-      ['Abril', 88051, 37622, 47236, 22245, 18142, 213296],
-      ['Maio', 62327, 35962, 46602, 26087, 11599, 182577]
+      ['Month', 'América Central e Caribe', 'America do Norte', 'América do Sul', 'Europa', 'Africa', 'Oceania', 'Ásia', 'Total'],
+      ['Janeiro', 3633, 66633, 735052, 122699, 3394, 7169, 18147, 956737],
+      ['Fevereiro', 3797, 86994, 534411, 170635, 3937, 7841, 25686, 833306],
+      ['Março', 5727, 104576, 426580, 163396, 4494, 8816, 26888, 740483],
+      ['Abril', 5159, 63179, 197391, 102578, 4572, 4049, 21650, 398587],
+      ['Maio', 5128, 60163, 169745, 72343, 4415, 3068, 20790, 335652]
     ]);
 
     var options = {
@@ -32,7 +32,7 @@ export class ComboChartAllComponent {
       /*   vAxis: { title: 'Chegadas' },
         hAxis: { title: 'Meses' }, */
       seriesType: 'bars',
-      series: { 5: { type: 'line' } },
+      series: { 7: { type: 'line' } },
       width: 1200,
       height: 800
     };
