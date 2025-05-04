@@ -19,6 +19,7 @@
     border: none;
     box-sizing: border-box;
     font-family: 'Outfit';
+    max-height: 62.4rem;
 }
 
 img {

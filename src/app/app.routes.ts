@@ -14,7 +14,7 @@ export const routes: Routes = [
         path: 'tendencias',
         pathMatch: 'full',
         loadComponent() {
-            return import("./tendencias/tendencias.component").then(
+            return import("./painel-de-controle-tendencias/tendencias.component").then(
                 m => m.TendenciasComponent
             )
         },
