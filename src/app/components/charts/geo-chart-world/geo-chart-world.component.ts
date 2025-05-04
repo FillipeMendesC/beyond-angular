@@ -120,7 +120,9 @@ export class GeoChartWorldComponent {
     var options = {
       /* displayMode: 'text', */
       region: 'world',
-      colorAxis: { colors: ['#aec7e8', '#1f77b4'] }
+      colorAxis: { colors: ['#aec7e8', '#1f77b4'] },
+      height: 800,
+      width: 800
 
     };
 

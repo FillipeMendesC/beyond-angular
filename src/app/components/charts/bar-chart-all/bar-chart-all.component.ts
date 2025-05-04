@@ -41,7 +41,7 @@ export class BarChartAllComponent {
     var options = {
       /* 'title': 'Turistas por País', */
       /* 'width': 800, */
-      'height': 600,
+      'height': 500,
       legend: { position: 'top' },
       chartArea: {
         height: '90%',

@@ -11,7 +11,7 @@ declare var google: any;
 export class GeoChartBrazilComponent {
   ngOnInit(): void {
     // Load the Visualization API and the corechart package.
-    google.charts.load('current', { 'packages': ['geochart', 'corechart'] });
+    google.charts.load('current', { 'packages': ['geochart'] });
 
     // Set a callback to run when the Google Visualization API is loaded.
     google.charts.setOnLoadCallback(this.drawChart);
@@ -45,16 +45,16 @@ export class GeoChartBrazilComponent {
       region: 'BR', // Define a região como Brasil.
       resolution: 'provinces', // Mostra estados em vez de países.
       colorAxis: { colors: ['#aec7e8', '#1f77b4'] }, // Define as cores do gradiente.
-      'width': 1000,
-      'height': 1000
+      'width': 800,
+      'height': 800
     };
 
     var chart = new google.visualization.GeoChart(document.getElementById('chart_div_Map'));
 
     chart.draw(data, options);
 
-    var barChart = new google.visualization.BarChart(document.getElementById('chart_div_Map_Bar'));
-    barChart.draw(data, options);
+    /*  var barChart = new google.visualization.BarChart(document.getElementById('chart_div_Map_Bar'));
+     barChart.draw(data, options); */
   }
 
 }
