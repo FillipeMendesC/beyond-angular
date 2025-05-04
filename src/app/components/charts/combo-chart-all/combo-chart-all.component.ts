@@ -33,7 +33,7 @@ export class ComboChartAllComponent {
         hAxis: { title: 'Meses' }, */
       seriesType: 'bars',
       series: { 7: { type: 'line' } },
-      'height': 600,
+      'height': 500,
       legend: { position: 'top' },
       chartArea: {
         height: '90%',
