@@ -13,6 +13,19 @@ export class SidebarComponent {
   showOptions = signal(false);
   private leaveTimeout: any;
 
+  expandSidebar() {
+    const sidebar = document.querySelector('.sidebar') as HTMLElement;
+    const sidebarWidth = sidebar.offsetWidth;
+    const expandedWidth = sidebarWidth === 90 ? 160 : 90;
+    sidebar.style.width = `${expandedWidth}px`;
+    this.showOptions.set(false); 
+    const navTextElements = document.querySelectorAll('.nav-text') as NodeListOf<HTMLElement>;
+    navTextElements.forEach(element => {
+      element.style.display = sidebar.offsetWidth === 90 ? 'initial' : 'none';
+    });
+    this.clearLeaveTimeout();
+  }
+
   toggleOptions() {
     this.showOptions.set(!this.showOptions());
     this.clearLeaveTimeout();

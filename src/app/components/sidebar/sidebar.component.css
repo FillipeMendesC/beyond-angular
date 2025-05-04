@@ -9,6 +9,8 @@
     justify-content: center;
     width: 9rem;
     box-shadow: 2px 1px 10px 2px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
 }
 
 .sidebar .top {
@@ -34,6 +36,19 @@ li {
     transition: background-color 0.3s ease-in-out;
 }
 
+.icon-text {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icon-text .nav-text {
+    display: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+}
+
 li svg {
     margin: 0.8rem 0;
 }
@@ -41,6 +56,11 @@ li svg {
 .active-route,
 li:hover {
     background-color: white;
+}
+.active-route .nav-text,
+li:hover .nav-text {
+    color: var(--navy-blue);
+    transition: all 0.3s ease-in-out;
 }
 
 .active-route #icon-color.stroke,
