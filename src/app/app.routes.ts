@@ -46,6 +46,15 @@ export const routes: Routes = [
                 m => m.ConfiguracoesPerfilComponent
             );
         },
+    },
+    {
+        path: 'heatmap',
+        pathMatch: 'full',
+        loadComponent() {
+            return import('./heatmap/heatmap.component').then(
+                m => m.HeatmapComponent
+            );
+        },
     }
 ];
 
