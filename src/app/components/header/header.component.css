@@ -1,5 +1,5 @@
 header {
-    background-color: red;
+    background-color: var(--light-green);
     height: 8rem;
     box-shadow: 2px 1px 10px 2px rgba(0, 0, 0, 0.2);
     position: relative;
