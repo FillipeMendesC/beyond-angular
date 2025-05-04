@@ -81,7 +81,7 @@
 }
 
 #expandir:hover {
-    background-color: #a6b3bd; 
+    background-color: #a6b3bd;
     transform: scale(1.2);
     cursor: pointer;
 }
@@ -96,8 +96,8 @@
 }
 
 .grafico1 {
-    width: 63rem;
-    height: 39rem;
+    width: 60rem;
+    height: 65rem;
     border-radius: 1rem;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
 }
@@ -113,8 +113,8 @@
 }
 
 .grafico2 {
-    width: 63rem;
-    height: 39rem;
+    width: 100rem;
+    height: 65rem;
     border-radius: 1rem;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
 }

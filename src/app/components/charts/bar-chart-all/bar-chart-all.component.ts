@@ -39,9 +39,16 @@ export class BarChartAllComponent {
 
     // Set chart options
     var options = {
-      'title': 'Turistas por País',
-      'width': 800,
-      'height': 600
+      /* 'title': 'Turistas por País', */
+      /* 'width': 800, */
+      'height': 600,
+      legend: { position: 'top' },
+      chartArea: {
+        height: '90%',
+        width: '100%',
+        left: 100,
+        right: 100
+      }
     };
 
     // Instantiate and draw the Bar Chart

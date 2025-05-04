@@ -28,13 +28,19 @@ export class ComboChartAllComponent {
     ]);
 
     var options = {
-      title: 'Entrada de Turistas Mensal por País',
+      /* title: 'Entrada de Turistas Mensal por País', */
       /*   vAxis: { title: 'Chegadas' },
         hAxis: { title: 'Meses' }, */
       seriesType: 'bars',
       series: { 7: { type: 'line' } },
-      width: 1200,
-      height: 800
+      'height': 600,
+      legend: { position: 'top' },
+      chartArea: {
+        height: '90%',
+        width: '100%',
+        left: 100,
+        right: 30
+      }
     };
 
     // Instantiate and draw our chart, passing in some options.
