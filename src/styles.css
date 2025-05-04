@@ -6,7 +6,7 @@
     --sead-green: #3A4C41;
     --link-green: #1C2529;
     --light-gray: #ECF0F6;
-    
+
     --navy-blue: #1C274C;
 }
 
@@ -19,7 +19,7 @@
     border: none;
     box-sizing: border-box;
     font-family: 'Outfit';
-    max-height: 62.4rem;
+
 }
 
 img {
