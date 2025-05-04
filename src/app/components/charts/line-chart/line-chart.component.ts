@@ -37,9 +37,14 @@ export class LineChartComponent {
     var options = {
       /* title: 'Total de Chegadas por ano e mês', */
       /* curveType: 'function', */
-      /*  legend: { position: 'bottom' }, */
+      legend: { position: 'top' },
       /* 'width': 1600, */
-      'height': 500
+      'height': 560,
+      chartArea: {
+        width: '100%',
+        left: 120,
+        right: 20
+      }
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('chart_div_Line'));
