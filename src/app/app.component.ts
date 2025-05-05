@@ -4,6 +4,7 @@ import { HeaderComponent } from "./components/header/header.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { PainelDeControleHistoricoComponent } from "./painel-de-controle-historico/painel-de-controle-historico.component";
 
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, HeaderComponent, SidebarComponent],
@@ -11,5 +12,5 @@ import { PainelDeControleHistoricoComponent } from "./painel-de-controle-histori
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  
+
 }
