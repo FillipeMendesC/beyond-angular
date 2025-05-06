@@ -30,11 +30,6 @@ export class BarChartAllComponent {
       ['Chile', 294485],
       ['Paraguai', 243479],
       ['Uruguai', 210915],
-      ['França', 97207],
-      ['Portugal', 91885],
-      ['Alemanha', 83387],
-      ['Reino Unido', 74181],
-      ['Itália', 61661]
     ]);
 
     // Set chart options

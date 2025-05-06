@@ -9,7 +9,7 @@ import { InputFilterComponent } from "../components/input-filter/input-filter.co
 
 @Component({
   selector: 'app-tendencias',
-  imports: [ComboChartAllComponent, BarChartAllComponent, GeoChartWorldComponent, GeoChartBrazilComponent, CardKpiComponent, InputFilterComponent],
+  imports: [ComboChartAllComponent, BarChartAllComponent, CardKpiComponent, InputFilterComponent],
   templateUrl: './tendencias.component.html',
   styleUrl: './tendencias.component.css'
 })

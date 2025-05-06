@@ -6,7 +6,7 @@ import { PupUpComponent } from '../pup-up/pup-up.component';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, PupUpComponent],
+  imports: [PupUpComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
